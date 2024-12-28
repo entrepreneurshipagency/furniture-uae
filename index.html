@@ -1,55 +1,85 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
   <!-- Basic Metas -->
-  <meta charset="utf-8" />
-  <meta name="author" content="Your Name or Company" />
-  <meta name="description" content="Premium Furniture for Your Home and Office" />
-  <meta name="keywords" content="Furniture, Home Decor, Office Furniture, Sofas, Tables, Chairs" />
-
+  <meta charset="UTF-8">
+  <meta name="author" content="Upholstery Pro">
+  <meta name="description" content="Upholstery Pro offers premium quality furniture to enhance your living and working spaces. Explore our wide range of sofas, chairs, tables, and more.">
+  <meta name="keywords" content="Furniture, Upholstery, Sofas, Chairs, Tables, Home Decor, Office Furniture">
+  
   <!-- Mobile Specific Metas -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta property="og:title" content="Furniture Shop" />
-  <meta property="og:url" content="index.html" />
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Upholstery Pro - Premium Furniture">
+  <meta property="og:description" content="Discover our exquisite range of furniture designed to bring comfort and style to your spaces.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:url" content="https://www.upholsterypro.com">
+  
   <!-- Page Title -->
-  <title>Furniture Haven - Premium Furniture for Every Space</title>
-
+  <title>Upholstery Pro - Premium Furniture for Every Space</title>
+  
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/favicon.ico" />
-
-  <!-- Fonts -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="assets/css/vendor/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-p6x1dB6+ZjvThh1F0t+XBD9EKoszw9V+V0vY4D3zVpJtJ0kqS1uIYt1E+Tk5fK+O4k6R06SnhlZV1pKJFrKQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  
+  <!-- Additional Styles (Optional) -->
+  <style>
+    /* Hero Section Styling */
+    .hero-section {
+      background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+      color: #fff;
+      padding: 150px 0;
+      text-align: center;
+    }
+    
+    /* Product Card Hover Effect */
+    .product-card:hover {
+      transform: translateY(-10px);
+      transition: all 0.3s ease-in-out;
+    }
+    
+    /* Testimonials Carousel */
+    .testimonial-item {
+      text-align: center;
+      padding: 30px;
+    }
+    
+    /* Footer Styling */
+    .tp-footer {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+  </style>
 </head>
 
 <body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">
       You are using an <strong>outdated</strong> browser. Please
-      <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-      your experience and security.
+      <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
     </p>
   <![endif]-->
-
+  
   <!-- Back to Top Button -->
   <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-
+  
   <!-- Header Starts -->
   <header class="page-header sticky-top" id="top">
     <div class="container">
@@ -57,211 +87,147 @@
         <!-- Logo Section -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <div class="logo">
-            <a href="#" class="nav-brand">
-              <!-- Replace with your logo image if available -->
-              <img src="assets/images/logo.png" alt="Furniture Haven" width="155" height="36" />
-              <!-- Alternatively, use text branding -->
-              <!-- <span style="font-size: 50px; font-weight: 700; font-family: Jost;">FurnitureHaven</span> -->
+            <a href="index.html" class="nav-brand">
+              <img src="assets/images/logo.png" alt="Upholstery Pro" width="150" height="50">
+              <!-- Alternatively, use text branding
+              <span style="font-size: 32px; font-weight: 700; font-family: Jost;">Upholstery Pro</span>
+              -->
             </a>
           </div>
         </div>
-
+        
         <!-- Navigation and Search -->
         <div class="col-lg-9 col-md-8 col-sm-6 col-6">
           <div class="right-part d-flex justify-content-end align-items-center">
             <!-- Search Form -->
-            <form action="#" class="search-form d-none d-lg-block">
+            <form action="#" class="search-form d-none d-lg-block me-4">
               <div class="input-group">
-                <input type="text" class="search-input" placeholder="Search for furniture..." />
+                <input type="text" class="form-control" placeholder="Search for furniture...">
                 <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
               </div>
             </form>
-
+            
             <!-- Navigation Menu -->
             <nav class="nav-list">
-              <a class="support-link d-none d-md-inline-block" href="mailto:info@furniturehaven.com" target="_blank">
-                Request Support
-              </a>
-              <a class="e-btn d-none d-md-inline-block" href="#contact">Contact Us</a>
-              <a href="#" class="toggle-navbar"><i class="fas fa-bars"></i></a>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-md-flex">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+              <!-- Mobile Menu Toggle -->
+              <a href="#" class="toggle-navbar d-md-none"><i class="fas fa-bars"></i></a>
             </nav>
           </div>
         </div>
       </div>
     </div>
   </header>
-
+  <!-- Header Ends -->
+  
   <!-- Main Content Wrapper -->
   <div class="main-content-wrapper">
     <div class="container">
-      <div class="row doc-container">
+      <div class="row">
         <!-- Main Content Area -->
-        <div class="col-xl-1"></div>
-        <div class="col-xl-7 col-lg-12">
+        <div class="col-xl-8 col-lg-12">
           <div class="main-content">
             <main class="main">
-              <div class="filterable-wrapper">
-                <!-- Home Section -->
-                <section id="home" class="doc-section">
-                  <div class="hero-section">
-                    <h1>Welcome to Furniture Haven</h1>
-                    <p>Your one-stop shop for premium furniture and home decor.</p>
-                    <a href="#products" class="btn btn-primary">Explore Our Products</a>
-                  </div>
-                  <figure>
-                    <img class="max-100" src="assets/images/hero-image.jpg" alt="Modern Furniture" />
-                  </figure>
-                </section>
-
-                <!-- Products Section -->
-                <section id="products" class="doc-section">
-                  <h2>Our Products</h2>
-                  <div class="product-gallery">
-                    <div class="row">
-                      <!-- Product Item 1 -->
-                      <div class="col-md-4">
-                        <div class="card">
-                          <img src="assets/images/products/sofa.jpg" class="card-img-top" alt="Sofa">
-                          <div class="card-body">
-                            <h5 class="card-title">Comfortable Sofa</h5>
-                            <p class="card-text">$499.99</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                          </div>
-                        </div>
+              <!-- Hero Section -->
+              <section id="home" class="hero-section">
+                <div class="container">
+                  <h1>Welcome to Upholstery Pro</h1>
+                  <p>Crafting Premium Furniture to Elevate Your Spaces</p>
+                  <a href="#products" class="btn btn-primary btn-lg">Explore Our Collection</a>
+                </div>
+              </section>
+              
+              <!-- Products Section -->
+              <section id="products" class="doc-section my-5">
+                <h2 class="text-center mb-4">Our Products</h2>
+                <div class="row">
+                  <!-- Product Item 1 -->
+                  <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                      <img src="assets/images/products/sofa.jpg" class="card-img-top" alt="Elegant Sofa">
+                      <div class="card-body">
+                        <h5 class="card-title">Elegant Sofa</h5>
+                        <p class="card-text">$899.99</p>
+                        <a href="#" class="btn btn-outline-primary">View Details</a>
                       </div>
-                      <!-- Product Item 2 -->
-                      <div class="col-md-4">
-                        <div class="card">
-                          <img src="assets/images/products/table.jpg" class="card-img-top" alt="Dining Table">
-                          <div class="card-body">
-                            <h5 class="card-title">Elegant Dining Table</h5>
-                            <p class="card-text">$299.99</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Product Item 3 -->
-                      <div class="col-md-4">
-                        <div class="card">
-                          <img src="assets/images/products/chair.jpg" class="card-img-top" alt="Office Chair">
-                          <div class="card-body">
-                            <h5 class="card-title">Ergonomic Office Chair</h5>
-                            <p class="card-text">$199.99</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Add more products as needed -->
                     </div>
                   </div>
-                </section>
-
-                <!-- Video Showcase Section -->
-                <section id="video_showcase" class="doc-section">
-                  <h2>Our Craftsmanship</h2>
-                  <p>Watch our artisans create beautiful furniture pieces with precision and care.</p>
-                  <div class="video-container">
-                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
+                  <!-- Product Item 2 -->
+                  <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                      <img src="assets/images/products/dining-table.jpg" class="card-img-top" alt="Dining Table">
+                      <div class="card-body">
+                        <h5 class="card-title">Modern Dining Table</h5>
+                        <p class="card-text">$499.99</p>
+                        <a href="#" class="btn btn-outline-primary">View Details</a>
+                      </div>
+                    </div>
                   </div>
-                </section>
-
-                <!-- About Us Section -->
-                <section id="about" class="doc-section">
-                  <h2>About Us</h2>
-                  <p>
-                    Furniture Haven has been crafting high-quality furniture for over a decade. Our mission is to provide stylish and durable pieces that enhance the beauty and functionality of your living spaces.
-                  </p>
-                  <figure>
-                    <img class="max-100" src="assets/images/about-us.jpg" alt="About Furniture Haven" />
-                  </figure>
-                </section>
-
-                <!-- Contact Section -->
-                <section id="contact" class="doc-section">
-                  <h2>Contact Us</h2>
-                  <p>Have questions or need assistance? Get in touch with our support team.</p>
-                  <form action="#" method="post" class="contact-form">
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                  <!-- Product Item 3 -->
+                  <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                      <img src="assets/images/products/office-chair.jpg" class="card-img-top" alt="Office Chair">
+                      <div class="card-body">
+                        <h5 class="card-title">Ergonomic Office Chair</h5>
+                        <p class="card-text">$299.99</p>
+                        <a href="#" class="btn btn-outline-primary">View Details</a>
+                      </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                  </div>
+                  <!-- Add more products as needed -->
+                </div>
+              </section>
+              
+              <!-- Video Showcase Section -->
+              <section id="video_showcase" class="doc-section my-5">
+                <h2 class="text-center mb-4">Our Craftsmanship</h2>
+                <p class="text-center mb-4">Watch our artisans create beautiful furniture pieces with precision and care.</p>
+                <div class="video-container">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Upholstery Pro Video Showcase" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </section>
+              
+              <!-- Services Section -->
+              <section id="services" class="doc-section my-5">
+                <h2 class="text-center mb-4">Our Services</h2>
+                <div class="row">
+                  <!-- Service 1 -->
+                  <div class="col-md-4 mb-4">
+                    <div class="service-item text-center">
+                      <i class="fas fa-couch fa-3x mb-3 text-primary"></i>
+                      <h5>Custom Upholstery</h5>
+                      <p>Personalize your furniture with our custom upholstery services, choosing from a wide range of fabrics and materials.</p>
                     </div>
-                    <div class="mb-3">
-                      <label for="message" class="form-label">Message</label>
-                      <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                  </div>
+                  <!-- Service 2 -->
+                  <div class="col-md-4 mb-4">
+                    <div class="service-item text-center">
+                      <i class="fas fa-tools fa-3x mb-3 text-primary"></i>
+                      <h5>Repairs & Restoration</h5>
+                      <p>Revitalize your cherished furniture pieces with our expert repair and restoration services.</p>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                  </form>
-                </section>
-              </div>
-            </main>
-          </div>
-        </div>
-
-        <!-- Sidebar Navigation -->
-        <div class="col-xl-3">
-          <aside class="sidebar-navigation sticky-top doc-sidebar">
-            <h3>Navigation</h3>
-            <ul class="themepure-doc-nav nav-sidebar doc-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#products">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#video_showcase">Video</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </aside>
-        </div>
-        <div class="col-xl-1"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="tp-footer">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="page-footer text-center">
-          <p>
-            © 2024 All Rights Reserved by
-            <a href="https://yourwebsite.com">Furniture Haven</a>
-          </p>
-          <div class="social-footer">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScripts -->
-  <!-- jQuery -->
-  <script src="assets/js/vendor/jquery.min.js"></script>
-  <script src="assets/js/vendor/jquery-migrate.min.js"></script>
-  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-  <!-- jQuery Easing Plugin -->
-  <script src="assets/js/vendor/easing-1.3.js"></script>
-  <!-- Custom Scripts -->
-  <script src="assets/js/onpage-menu.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+                  </div>
+                  <!-- Service 3 -->
+                  <div class="col-md-4 mb-4">
+                    <div class="service-item text-center">
+                      <i class="fas fa-truck fa-3x mb-3 text-primary"></i>
+                      <h5>Delivery & Assembly</h5>
+                      <p>Enjoy hassle-free delivery and professional assembly services, ensuring your furniture is set up perfectly.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <!-- Testimonials Section -->
+              <section id="testimonials" class="doc-section my-5">
+                <h2 class="text-center mb-4">What Our Customers Say</h2>
+                <d
