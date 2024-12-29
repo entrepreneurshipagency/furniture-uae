@@ -1,166 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  
-  <title>Furniture Shop</title>
-  
-  <!-- Bootstrap CSS (CDN) -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
+<html>
 
-  <!-- Optional custom CSS -->
-  <style>
-    /* Example basic styling — customize as you wish */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .about_section {
-      padding: 50px 0;
-      background: #f2f2f2;
-    }
-    .about_section h2 {
-      font-size: 36px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    .about_section p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    /* Carousel image styling */
-    .carousel-item img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-    /* Simple spacing/padding for the container */
-    .carousel_section {
-      padding: 50px 0;
-    }
-    .carousel_section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 32px;
-      font-weight: 600;
-    }
-  </style>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Furniture</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
+  <div class="hero_area">
 
-  <!-- HEADER (Optional / Adapt as needed) -->
-  <header class="bg-dark text-white p-3">
-    <div class="container">
-      <h1>My Furniture Shop</h1>
-    </div>
-  </header>
-  <!-- END HEADER -->
-
-  <!-- ABOUT SECTION (Displays first) -->
-  <section class="about_section" id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        We deliver custom furniture at your doorstep all across UAE. Explore our
-        wide range of beds, sofas, and more — all tailor-made to your preferences.
-      </p>
-    </div>
-  </section>
-  <!-- END ABOUT SECTION -->
-
-  <!-- CAROUSEL SECTION (Second, with images) -->
-  <section class="carousel_section" id="shop">
-    <div class="container">
-      <h2>Our Latest Collection</h2>
-      <!-- Bootstrap Carousel -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <!-- Indicators (little dots below the carousel) -->
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Carousel Inner -->
-        <div class="carousel-inner">
-
-          <!-- FIRST SLIDE: using 'uae furni 17.jpg' instead of a chair image -->
-          <div class="carousel-item active">
-            <img src="images/uae furni 17.jpg" class="d-block w-100" alt="uae furni 17" />
+    <!-- ABOUT SECTION (Appears First) -->
+    <section class="about_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  About Us
+                </h2>
+              </div>
+              <p>
+                We deliver customized furniture at your doorstep all across UAE. Explore our
+                wide range of beds, sofas, and more — all tailor-made to your preferences.
+              </p>
+            </div>
           </div>
-
-          <!-- SECOND SLIDE: example with 'UAE furni 2.jpg' -->
-          <div class="carousel-item">
-            <img src="images/UAE furni 2.jpg" class="d-block w-100" alt="UAE furni 2" />
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/about-img.png" alt="">
+            </div>
           </div>
-
-          <!-- THIRD SLIDE: example with 'UAE furni 4.jpg' -->
-          <div class="carousel-item">
-            <img src="images/UAE furni 4.jpg" class="d-block w-100" alt="UAE furni 4" />
-          </div>
-
-          <!-- FOURTH SLIDE: example with 'UAE furni 5.jpg' -->
-          <div class="carousel-item">
-            <img src="images/UAE furni 5.jpg" class="d-block w-100" alt="UAE furni 5" />
-          </div>
-
-          <!-- Add more slides as desired with your other images -->
-          <!-- e.g., 'UAE furni 3.jpg', 'UAE furni 6.jpg', etc. -->
         </div>
-
-        <!-- Carousel Controls -->
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-      <!-- End of Carousel -->
-    </div>
-  </section>
-  <!-- END CAROUSEL SECTION -->
+    </section>
+    <!-- END ABOUT SECTION -->
 
-  <!-- FOOTER (Optional / Adapt as needed) -->
-  <footer class="bg-dark text-white p-3">
-    <div class="container text-center">
-      <p>&copy; 2024 My Furniture Shop. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <!-- END FOOTER -->
+    <!-- CAROUSEL SECTION (Second Section) -->
+    <section class="slider_section">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Latest Collection</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
 
-  <!-- JS, Popper.js, and jQuery (for Bootstrap) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-  ></script>
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <!-- First Slide: UAE Furni 17 -->
+            <div class="carousel-item active">
+              <img src="images/uae furni 17.jpg" class="d-block w-100" alt="Furniture Image 17">
+            </div>
 
+            <!-- Second Slide: UAE Furni 2 -->
+            <div class="carousel-item">
+              <img src="images/uae furni 2.jpg" class="d-block w-100" alt="Furniture Image 2">
+            </div>
+
+            <!-- Third Slide: UAE Furni 4 -->
+            <div class="carousel-item">
+              <img src="images/uae furni 4.jpg" class="d-block w-100" alt="Furniture Image 4">
+            </div>
+
+            <!-- Fourth Slide: UAE Furni 5 -->
+            <div class="carousel-item">
+              <img src="images/uae furni 5.jpg" class="d-block w-100" alt="Furniture Image 5">
+            </div>
+
+            <!-- Add additional slides as needed -->
+          </div>
+
+          <!-- Carousel Controls -->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- END CAROUSEL SECTION -->
+
+    <!-- DISCOUNT SECTION -->
+    <section class="discount_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <h2>
+                The Latest Collection
+              </h2>
+              <h2 class="main_heading">
+                50% DISCOUNT
+              </h2>
+              <div>
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/discount-img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END DISCOUNT SECTION -->
+
+    <!-- INFO SECTION -->
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="info_contact">
+              <h5>
+                About Shop
+              </h5>
+              <p>
+                Address
+              </p>
+              <p>
+                +971-52-3512652
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_info">
+              <h5>
+                Information
+              </h5>
+              <p>
+                We deliver custom furniture at your doorstep all across UAE.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_insta">
+              <h5>
+                Instagram
+              </h5>
+              <div class="insta_container">
+                <div>
+                  <a href="">
+                    <div class="insta-box b-1">
+                      <img src="images/i-1.jpg" alt="">
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="insta-box b-2">
+                      <img src="images/i-2.jpg" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_form">
+              <h5>
+                Newsletter
+              </h5>
+              <form action="">
+                <input type="email" placeholder="Enter your email">
+                <button>
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END INFO SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <section class="container-fluid footer_section">
+      <div class="container">
+        <p>
+          &copy; 2024 All Rights Reserved By Your Furniture Shop
+        </p>
+      </div>
+    </section>
+    <!-- END FOOTER SECTION -->
+
+  </div>
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 </body>
+
 </html>
